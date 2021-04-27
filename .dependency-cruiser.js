@@ -410,4 +410,4 @@ module.exports = {
     }
   }
 };
-// generated: dependency-cruiser@9.25.1 on 2021-04-22T20:21:39.361Z
+// generated: dependency-cruiser@9.26.0 on 2021-04-27T21:28:37.153Z

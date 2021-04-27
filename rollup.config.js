@@ -1,62 +1,66 @@
-import babel from '@rollup/plugin-babel';
+import babel from "@rollup/plugin-babel";
+import coffee from 'rollup-plugin-coffee-script';
 
-const isProduction = process.env.NODE_ENV === 'production';
+const isProduction = process.env.NODE_ENV === "production";
 
-const entryName = 'index';
+const entryName = "index";
+
+const coffeeOptions = {transpile: {presets: ['@babel/env']}}
+
 /**
  * Replace this with the name of your module
  */
-const name = 'javascript-template';
+const name = "javascript-template";
 
 const bab = () =>
   babel({
     // cacheRoot: '.rollupcache',
-    babelHelpers: 'bundled',
+    babelHelpers: "bundled",
   });
 
 export default [
   {
-    input: `src/${entryName}.js`,
-    output: [
+    input: `src/${entryName}.coffee`,
+        output: [
       {
-        file: `dist/es2015/${entryName}.js`,
-        format: 'es',
+        file: `dist/es2015/${entryName}.coffee`,
+        format: "es",
       },
       {
-        file: `dist/umd-es2015/${entryName}.js`,
-        format: 'umd',
+        file: `dist/umd-es2015/${entryName}.coffee`,
+        format: "umd",
         name: name,
       },
     ],
-    plugins: [bab()],
+    plugins: [coffee(coffeeOptions), bab()],
   },
-].concat(
+  ].concat(
   !isProduction
     ? []
     : [
         {
-          input: `src/${entryName}.js`,
-          output: {
+                    input: `src/${entryName}.coffee`,
+                    output: {
             // @bab/ts-ignore
-            file: `dist/es2017/${entryName}.js`,
-            format: 'es',
+            file: `dist/es2017/${entryName}.coffee`,
+            format: "es",
           },
-          plugins: [bab()],
+          plugins: [coffee(coffeeOptions), bab()],
         },
         {
-          input: `src/${entryName}.js`,
-          output: [
-            {file: `dist/commonjs/${entryName}.js`, format: 'cjs'},
+                    input: `src/${entryName}.coffee`,
+                    output: [
+            { file: `dist/commonjs/${entryName}.coffee`, format: "cjs" },
             {
-              file: `dist/amd/${entryName}.js`,
-              format: 'amd',
-              amd: {id: entryName},
+              file: `dist/amd/${entryName}.coffee`,
+              format: "amd",
+              amd: { id: entryName },
             },
-            {file: `dist/native-modules/${entryName}.js`, format: 'es'},
-            {file: `dist/umd/${entryName}.js`, format: 'umd', name: name},
-            {file: `dist/system/${entryName}.js`, format: 'system'},
+            { file: `dist/native-modules/${entryName}.coffee`, format: "es" },
+            { file: `dist/umd/${entryName}.coffee`, format: "umd", name: name },
+            { file: `dist/system/${entryName}.coffee`, format: "system" },
           ],
-          plugins: [bab()],
+          plugins: [coffee(coffeeOptions), bab()],
         },
-      ],
+      ]
 );

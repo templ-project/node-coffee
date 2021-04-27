@@ -7,13 +7,13 @@ module.exports = {
     node: true,
     mocha: true,
   },
-  parser: 'babel-eslint',
-  parserOptions: {ecmaVersion: 2018, sourceType: 'module'},
+  parser: 'eslint-plugin-coffee',
 
   // uncomment for eslint rules
   extends: [
+    "plugin:coffee/eslint-recommended",
     // uncomment to add airbnb rules
-    // 'airbnb/base'
+    // 'plugin:coffee/airbnb-base'
     'plugin:mocha/recommended',
     'plugin:sonar/recommended',
     'plugin:sonarjs/recommended',
@@ -23,7 +23,7 @@ module.exports = {
     // 'plugin:jest/recommended',
     'prettier',
   ],
-  plugins: ['prettier', 'sonar', 'sonarjs'],
+  plugins: ['coffee', 'prettier', 'sonar', 'sonarjs'],
   root: true,
   rules: {
     'consistent-return': 2,
@@ -34,7 +34,7 @@ module.exports = {
     'sonar/no-invalid-await': 0,
     'space-unary-ops': 2,
     curly: ['error', 'all'],
-    indent: [1, 2],
-    semi: [1, 'always'],
+    // indent: [1, 2],
+    semi: [0, 'always'],
   },
 };
