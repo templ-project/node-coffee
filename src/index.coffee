@@ -4,7 +4,6 @@ module.exports = {
   hello
 }
 
-# TODO:
 curlyTest = (a, b, c, d) ->
   if a < 0
     a++
