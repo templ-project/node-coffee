@@ -11,8 +11,15 @@
 <!-- [![CircleCI](https://circleci.com/gh/templ-project/node-coffee.svg?style=shield)](https://circleci.com/gh/templ-project/node-coffee) -->
 
 <!-- [![Sonarcloud Status](https://sonarcloud.io/api/project_badges/measure?project=templ-project_node-coffee&metric=alert_status)](https://sonarcloud.io/dashboard?id=templ-project_node-coffee)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=templ-project_node-coffee&metric=code_smells)](https://sonarcloud.io/dashboard?id=templ-project_node-coffee)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=templ-project_node-coffee&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=templ-project_node-coffee)
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=templ-project_node-coffee&metric=reliability_rating)](https://sonarcloud.io/dashboard?id=templ-project_node-coffee)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=templ-project_node-coffee&metric=security_rating)](https://sonarcloud.io/dashboard?id=templ-project_node-coffee)
+
+[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=templ-project_node-coffee&metric=ncloc)](https://sonarcloud.io/dashboard?id=templ-project_node-coffee)
 [![SonarCloud Coverage](https://sonarcloud.io/api/project_badges/measure?project=templ-project_node-coffee&metric=coverage)](https://sonarcloud.io/component_measures/metric/coverage/list?id=templ-project_node-coffee)
 [![SonarCloud Bugs](https://sonarcloud.io/api/project_badges/measure?project=templ-project_node-coffee&metric=bugs)](https://sonarcloud.io/component_measures/metric/reliability_rating/list?id=templ-project_node-coffee)
+[![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=templ-project_node-coffee&metric=sqale_index)](https://sonarcloud.io/dashboard?id=templ-project_node-coffee)
 [![SonarCloud Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=templ-project_node-coffee&metric=vulnerabilities)](https://sonarcloud.io/component_measures/metric/security_rating/list?id=templ-project_node-coffee) -->
 
 <!-- Donation Badges -->
