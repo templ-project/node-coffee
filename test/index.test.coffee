@@ -1,6 +1,6 @@
-{ expect } = require 'chai'
+{expect} = require 'chai'
 
-{ hello } = require '../src'
+{hello} = require '../src'
 
 #
 # Uncomment for Mocha

@@ -19,7 +19,15 @@ module.exports = {
     'plugin:sonarjs/recommended',
     // comment to remove mocha rules
     'plugin:mocha/recommended',
-    // uncomment to add jest rules
+    /************************************************************************
+     * Uncomment to add jest rules. Don't forget you need to install
+     * the jest eslint plugin.
+     * ```bash
+     * npm i -D eslint-plugin-jest
+     * # or
+     * yarn add --dev eslint-plugin-jest
+     * ```
+     */
     // 'plugin:jest/recommended',
     'prettier',
   ],
